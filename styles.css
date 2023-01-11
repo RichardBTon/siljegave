@@ -1,0 +1,126 @@
+body, html {
+    background-color: lightblue;
+    font-family: 'Lato', sans-serif;
+    letter-spacing:0.05em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.3em;
+}   
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+.container {
+    margin: auto;
+    width: 80%;
+    min-height: 90vh;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.kupong-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.kupong {
+    padding: 10px;
+    border-radius: 5%;
+    text-align: center;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.kupong > p {
+    text-align: left;
+    margin-top: auto;
+    padding: 0 10px 0 10px;
+    color: snow;
+    padding-bottom: 20px;
+}
+
+.kupong > h2 {
+    color: snow;
+    font-size: 2em;
+}
+
+
+.grow{
+    transition: 1s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .grow:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s ease;
+    }
+    
+
+#escaperoom {
+    background-image: url("escaperoom.jpeg");
+    background-size: 150%;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+#kalas {
+    background-image: url("kalaset.jpg");
+    background-size: 160%;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+#teater {
+    background-image: url("teater.jpg");
+    background-size: 160%;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+footer {
+    text-align: center;
+    min-height: 10vh;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 15px;
+    background-color: beige;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+
+
+    .kupong-container {
+        grid-template-columns: 1fr;
+    }
+
+  }
